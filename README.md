@@ -3,7 +3,7 @@
 (C) 2022 Mark M. Bailey, PhD
 
 ## About
-This project is an ongoing effort to develop a method to classify 2D spectal data using convolutional neural networks.  The hypothesis is that 2D spectral data, when represented as an array, have the same data structure as an image of bit depth 1, and thus can be classified analogously.  While I'm testing this script against images to ensure the propoer functioning of the CNN, I ultimately see this being used to classify vibrational spectra that dampen over time, or similar data.
+This project is an ongoing effort to develop a method to classify 2D spectal data using convolutional neural networks.  The hypothesis is that 2D spectral data, when represented as an array, have the same data structure as an image of bit depth 1, and thus can be classified analogously.  While I'm testing this script against images to ensure the proper functioning of the CNN, I ultimately see this being used to classify vibrational spectra that dampen over time, or similar data.
 
 Much of this code was adapted from Gad, Aflak, and Huang, **et al.** (see references below).
 
