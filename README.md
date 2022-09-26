@@ -22,51 +22,51 @@ Be advised that this is a beta version and its functionality is currently being 
 * `spectrum.py` - Contains ModelBuilder class.
 
 ## ModelBuilder Class
-`ModelBuilder`<br><br>
+`ModelBuilder`<br>
 
-        &emsp;`load_data(dataset, **options)`<br>
-        
-        &emsp;Loads dataset for training, which should be a 3D array (# of spectra, y-axis, x-axis), or if images (# of images, height, width).  Images should be in grayscale.  Labels can be input as a list of text labels (which will be converted to integer categorical labels).<br><br>
-        
-        &emsp;Parameters (required):<br>
-            &emsp;&emsp;'dataset : `ndarray`' - Stacked spectra or images as Numpy arrays.<br><br>                                                
-        
-        &emsp;Parameters (optional):<br>
-            &emsp;&emsp;'dims : `tuple`' - Dimensions for reshaped arrays (rows, columns). Default value is (227, 227).<br>
-            &emsp;&emsp;'labels : `list`' - list of output labels.  Default will result in 10 model output parameters.<br><br>
-            
-        &emsp;`load_images(filepath, **options)`<br>
-        
-        &emsp;Loads and processes a set of image files from a specified file path.  Replaces the reshaped_data attribute.  Note all files in directory must be images as this method does not currently sort out non-image files.<br><br>
-    
-        &emsp;Parameters (required):<br>
-            &emsp;&emsp;'filepath : `str`' - Path to folder where image files are stored.<br><br>                                             
-        
-       &emsp;Parameters (optional):<br>
-            &emsp;&emsp;'dims : `tuple`' - Dimensions for reshaped arrays (rows, columns). Default value is (227, 227).<br>
-            &emsp;&emsp;'labels : `list`' - list of output labels.  Default will result in 10 model output parameters.<br><br>
-            
-        &emsp;`train(**options)`<br><br>
-        
-        &emsp;Trains the model on the loaded dataset.<br><br>
-        
-        &emsp;Parameters (optional):<br>
-            &emsp;&emsp;'train : `float`' - Training fraction. Default is 0.4.<br>
-            &emsp;&emsp;'test : `float`' - Testing fraction. Default is 0.6.<br>
-            &emsp;&emsp;'epochs : `int`' - Total training epochs.  Default is 35.<br>
-            &emsp;&emsp;'learning_rate : `int`' - Learning rate. Default is 0.1.<br><br>
-            
-        &emsp;`save_model(**options)`<br><br>
-        
-        &emsp;Saves a copy of the model to the specified (optional) path.<br><br>
-        
-        &emsp;Parameters (optional):<br>
-            &emsp;&emsp;'path : `str`' - Absolute path to saved file.  Default is 'net.model' in the current directory.<br><br>
-            
-        &emsp;`load_model(path)`<br><br>
-        
-        &emsp;Loads model from specified path.<br><br>
-        
-        &emsp;Parameters (required):<br>
-            &emsp;&emsp;'path : `str`' - location of model file.
+ &emsp;`load_data(dataset, **options)`<br>
+ 
+ &emsp;Loads dataset for training, which should be a 3D array (# of spectra, y-axis, x-axis), or if images (# of images, height, width).  Images should be in grayscale.  Labels can be input as a list of text labels (which will be converted to integer categorical labels).<br><br>
+ 
+ &emsp;Parameters (required):<br>
+     &emsp;&emsp;'dataset : `ndarray`' - Stacked spectra or images as Numpy arrays.<br><br>                                                
+ 
+ &emsp;Parameters (optional):<br>
+     &emsp;&emsp;'dims : `tuple`' - Dimensions for reshaped arrays (rows, columns). Default value is (227, 227).<br>
+     &emsp;&emsp;'labels : `list`' - list of output labels.  Default will result in 10 model output parameters.<br><br>
+     
+ &emsp;`load_images(filepath, **options)`<br>
+ 
+ &emsp;Loads and processes a set of image files from a specified file path.  Replaces the reshaped_data attribute.  Note all files in directory must be images as this method does not currently sort out non-image files.<br><br>
+ 
+ &emsp;Parameters (required):<br>
+     &emsp;&emsp;'filepath : `str`' - Path to folder where image files are stored.<br><br>                                             
+ 
+&emsp;Parameters (optional):<br>
+     &emsp;&emsp;'dims : `tuple`' - Dimensions for reshaped arrays (rows, columns). Default value is (227, 227).<br>
+     &emsp;&emsp;'labels : `list`' - list of output labels.  Default will result in 10 model output parameters.<br><br>
+     
+ &emsp;`train(**options)`<br><br>
+ 
+ &emsp;Trains the model on the loaded dataset.<br><br>
+ 
+ &emsp;Parameters (optional):<br>
+     &emsp;&emsp;'train : `float`' - Training fraction. Default is 0.4.<br>
+     &emsp;&emsp;'test : `float`' - Testing fraction. Default is 0.6.<br>
+     &emsp;&emsp;'epochs : `int`' - Total training epochs.  Default is 35.<br>
+     &emsp;&emsp;'learning_rate : `int`' - Learning rate. Default is 0.1.<br><br>
+     
+ &emsp;`save_model(**options)`<br><br>
+ 
+ &emsp;Saves a copy of the model to the specified (optional) path.<br><br>
+ 
+ &emsp;Parameters (optional):<br>
+     &emsp;&emsp;'path : `str`' - Absolute path to saved file.  Default is 'net.model' in the current directory.<br><br>
+     
+ &emsp;`load_model(path)`<br><br>
+ 
+ &emsp;Loads model from specified path.<br><br>
+ 
+ &emsp;Parameters (required):<br>
+     &emsp;&emsp;'path : `str`' - location of model file.
 
